@@ -1,1 +1,129 @@
-/* место для вашего кода */
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 148px 1fr;
+    grid-template-rows: 109px;
+    padding: 92px 49px 92px 51px;
+
+}
+
+.header__links-list {
+    justify-self: start;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    list-style: circle;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.header__links-list-item_no-bullit {
+    list-style: none;
+}
+
+.header__logo {
+    display: block;
+    width: 148px;
+    height: 105px;
+}
+
+.address {
+    justify-self: end;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24.3px;
+}
+
+.cover {
+    padding: 165px 50px 50px 50px;
+    background-image: url(/images/cover.jpg);
+    color: #FFF;
+    
+    
+}
+
+.cover__title {
+    
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115%;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+}
+
+.aligned-text {
+display: block;
+text-align: left;
+}
+
+.aligned-text_center {
+    display: block;
+    text-align: center; 
+}
+
+.aligned-text_right {
+    display: block;
+    text-align: right;
+}
+
+.cover__description{
+    margin-top: 135px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 78px;
+}
+
+.cover__description-text {
+    text-align: center;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; /* 127.273% */
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+.bet-button {
+    display: block;	
+	box-sizing: border-box;
+	padding: 12px 32px 12px 32px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    
+	
+	
+      
+    
+	
+	
+    
+	
+	/* outline: none;
+    color: #6c757d;
+	background-color: #fff;
+	cursor: pointer;
+	user-select: none;
+	appearance: none;
+	touch-action: manipulation;   */
+
+
+}
