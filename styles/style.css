@@ -29,7 +29,7 @@
     height: 105px;
 }
 
-.address {
+.header__address {
     justify-self: end;
     display: flex;
     flex-direction: column;
@@ -37,69 +37,135 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 24.3px;
+
+
 }
 
+
+.header__address a {
+    display: block;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
 .cover {
+    position: relative;
     padding: 165px 50px 50px 50px;
     background-image: url(/images/cover.jpg);
     color: #FFF;
     
-    
 }
 
+.overlay {
+    position: absolute;
+    background: #000;
+    opacity: 0.6;
+    inset: 0;
+    z-index: 1;
+}
+
+
 .cover__title {
-    
+    position: relative;
     font-size: 100px;
     font-style: normal;
     font-weight: 700;
     line-height: 115%;
-    letter-spacing: 30px;
     text-transform: uppercase;
+    z-index: 1;
+    
 }
 
+
+
 .aligned-text {
-display: block;
-text-align: left;
+    display: block;
+    text-align: left;
+    letter-spacing: 10px;
 }
+
+.aligned-text .letter-spacing-extended {
+    letter-spacing: 80px;
+}
+
+
 
 .aligned-text_center {
     display: block;
-    text-align: center; 
+    text-align: center;
+    letter-spacing: 10px; 
 }
+
+.aligned-text_center .letter-spacing-extended {
+    letter-spacing: 80px;
+}
+
+
+
 
 .aligned-text_right {
     display: block;
     text-align: right;
+    letter-spacing: 10px;
 }
 
-.cover__description{
+.aligned-text_right .letter-spacing-extended {
+    letter-spacing: 80px;
+}
+
+
+.no-letter-spacing {
+    letter-spacing: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.cover__description {
     margin-top: 135px;
     display: flex;
     flex-direction: row;
-    justify-content: end;
+    justify-content: flex-end;
     gap: 78px;
+    position: relative;
+    z-index: 1;
 }
 
 .cover__description-text {
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     font-size: 22px;
     font-style: normal;
     font-weight: 400;
-    line-height: 28px; /* 127.273% */
+    line-height: 28px; 
     text-transform: uppercase;
+    word-spacing: 1em;
 }
-
-
-
-
-
 
 
 
 .bet-button {
-    display: block;	
-	box-sizing: border-box;
-	padding: 12px 32px 12px 32px;
+    padding: 12px 32px 12px 32px;
     color: white;
     background-color: transparent;
     border: 1px solid;
@@ -107,23 +173,245 @@ text-align: left;
     font-size: 22px;
     font-weight: 400;
     text-transform: uppercase;
-
-    
-	
-	
-      
-    
-	
-	
-    
-	
-	/* outline: none;
-    color: #6c757d;
-	background-color: #fff;
-	cursor: pointer;
-	user-select: none;
-	appearance: none;
-	touch-action: manipulation;   */
-
-
 }
+
+
+
+
+
+
+
+
+.lots__heading {
+   margin-left: 40px;
+   margin-bottom: 27px; 
+    color: #000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+
+
+.lots {
+    padding: 180px 50px 182px 50px;
+}
+
+.lots__card-list {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.lots__card-list-item {
+    display: block;
+    max-width: 430px;
+    min-height: 460px;
+    flex-grow: 1;
+    }
+
+.card-link {
+    display: block;
+    text-decoration: none;
+    height: 100%;
+    background-size: cover;
+    
+}
+
+.card_type_film {
+    background-image: url(/images/card-lot-01.jpg);
+}
+
+.card_type_book {
+    background-image: url(/images/card-lot-02.jpg);
+}
+
+.card_type_picture {
+    background-image: url(/images/card-lot-03.jpg);
+}
+
+
+.card {
+    padding: 50px 40px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+       
+}
+
+.card__title {
+    color: #FFF;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 26.4px */
+    text-decoration-line: underline;
+    text-transform: uppercase;
+    z-index: 1; 
+}
+
+.card__text {
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 24px */
+    z-index: 1; 
+}
+
+.lots__look-more-link {
+    display: block;
+    margin-left: 40px;
+    margin-top: 30px;
+    color: #000;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+
+
+
+
+
+
+
+
+
+.about {
+    padding: 0 50px 180px 50px;
+    display: flex;
+    gap: 25px;
+    flex-direction: row;
+}
+
+.about__column_left {
+    padding-left: 95px;
+    padding-right: 95px;
+    display: flex;
+    flex-direction: column;
+    width: 430px;
+    gap: 8px;
+}
+
+.about__logo {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #000;
+    width: 240px;
+    height: 240px;
+    border-radius: 50%;
+}
+
+.about__logo-image {
+    width: 148px;
+    height: 114px;
+}
+
+.empty_space {
+    min-height: 240px;
+}
+
+
+.about__column_right {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.top_container {
+    min-height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.about__title {
+    color: #000;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.about__text {
+    min-height: 240px;
+    color: #000;
+    font-family: Raleway;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.first_paragraph {
+    
+    margin-bottom: 25px;
+}
+
+
+
+
+
+.footer {
+    padding: 0 50px 90px 50px;
+    display: grid;
+    grid-template-columns: 1fr 160px 1fr;
+    grid-template-rows: 109px;
+}
+
+
+
+
+
+.footer__address {
+    justify-self: start;
+}
+
+.footer__address a {
+    display: block;
+}
+
+.footer__menu {
+    
+}
+
+.footer__menu-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+}
+
+
+
+.footer__social-list {
+    justify-self: end;
+    list-style: none;
+    display: flex;
+    font-display: row;
+    gap: 48px;
+}
+
+.footer__social-icon {
+    width: 48px;
+    height: 48px;
+}
+
+
+
+
+justify-self: end;
