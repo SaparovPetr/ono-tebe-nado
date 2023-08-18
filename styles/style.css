@@ -3,10 +3,10 @@
   grid-template-columns: 1fr 148px 1fr;
   grid-template-rows: 109px;
   padding: 92px 49px 92px 51px;
-  color: #000;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
+  color: #000;
 }
 
 .header__menu {
