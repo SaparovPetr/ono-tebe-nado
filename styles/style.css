@@ -36,7 +36,7 @@
 
 .header__logo {
   display: block;
-  width: 148px;
+  width: 140px;
   height: 105px;
 }
 
@@ -58,6 +58,7 @@
 .cover {
   position: relative;
   padding: 165px 50px 50px 50px;
+  max-height: 766px;
   background-image: url(/images/cover.jpg);
   background-size: cover;
   color: #fff;
@@ -142,6 +143,7 @@
 
 .lots {
   padding: 180px 50px 182px 50px;
+  max-height: 939px;
   font-style: normal;
 }
 
@@ -227,7 +229,7 @@
 }
 
 .about {
-  padding: 0 50px 180px 50px;
+  padding: 12px 50px 180px 50px;
   display: flex;
   gap: 25px;
   color: #000;
@@ -293,7 +295,7 @@
 }
 
 .footer {
-  padding: 0 50px 90px 50px;
+  padding: 0 44px 90px 46px;
   display: grid;
   grid-template-columns: 1fr 160px 1fr;
   grid-template-rows: 109px;
