@@ -48,16 +48,19 @@
 .address {
   display: flex;
   flex-direction: column;
-  line-height: 133%;
 }
 
 .header__address {
   justify-self: end;
   justify-content: center;
-  padding-right: 3px;
+  line-height: 132%;
+  max-width: 240px;
 }
 
+
 .header__address a {
+  display: block;
+  width: fit-content;
   border-bottom: solid 1px;
 }
 
@@ -66,11 +69,14 @@
   padding: 165px 50px 50px 50px;
   background-image: url(../images/cover.jpg);
   background-size: cover;
+  background-position: center;
   color: #fff;
 }
 
 .overlay {
   position: absolute;
+  left: 0;
+  top: 0;
   background: #000;
   opacity: 0.6;
   inset: 0;
@@ -145,6 +151,7 @@
   text-transform: uppercase;
   font-size: 22px;
   font-weight: 400;
+  cursor: pointer;
 }
 
 .lots {
@@ -233,7 +240,7 @@
 }
 
 .about {
-  padding: 0px 50px 180px 50px;
+  padding: 0px 50px 186px 50px;
   display: flex;
   gap: 25px;
   color: #000;
@@ -264,10 +271,6 @@
   height: 114px;
 }
 
-.empty_space {
-  min-height: 240px;
-}
-
 .about__column_right {
   display: flex;
   flex-direction: column;
@@ -288,7 +291,6 @@
 }
 
 .about__text {
-  min-height: 240px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -312,9 +314,13 @@
   justify-content: flex-start;
   justify-self: start;
   padding-left: 5px;
+  line-height: 130%;
+  max-width: 242px;
 }
 
 .footer__address a {
+  display: block;
+  width: fit-content;
   border-bottom: solid 1px;
 }
 
