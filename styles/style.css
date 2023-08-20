@@ -50,7 +50,7 @@
 .address {
   display: flex;
   flex-direction: column;
-  line-height: 135%;
+  line-height: 133%;
 }
 
 .header__address {
@@ -239,7 +239,7 @@
 
 .about {
   /* max-height: 668px; */
-  padding: 0px 50px 180px 50px;
+  padding: 0px 50px 175px 50px;
   display: flex;
   gap: 25px;
   color: #000;
