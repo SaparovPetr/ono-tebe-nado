@@ -1,6 +1,7 @@
 .header {
+  /* max-height: 293px; */
   display: grid;
-  grid-template-columns: 1fr 148px 1fr;
+  grid-template-columns: 1fr 140px 1fr;
   grid-template-rows: 109px;
   padding: 92px 49px 92px 51px;
   font-size: 18px;
@@ -10,6 +11,7 @@
 }
 
 .header__menu {
+  justify-self: start;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -37,18 +39,24 @@
 .header__logo {
   display: block;
   width: 140px;
+  height: 109px;
+}
+
+.header__logo-image {
+  width: 140px;
   height: 105px;
 }
 
 .address {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
-  line-height: 24.3px;
+  line-height: 135%;
 }
 
 .header__address {
   justify-self: end;
+  justify-content: center;
+  padding-right: 3px;
 }
 
 .header__address a {
@@ -56,9 +64,9 @@
 }
 
 .cover {
+  /* max-height: 766px; */
   position: relative;
   padding: 165px 50px 50px 50px;
-  max-height: 766px;
   background-image: url(/images/cover.jpg);
   background-size: cover;
   color: #fff;
@@ -77,7 +85,6 @@
   font-size: 100px;
   font-style: normal;
   font-weight: 700;
-  line-height: 125%;
   text-transform: uppercase;
   z-index: 1;
 }
@@ -86,19 +93,21 @@
   display: block;
   text-align: left;
   letter-spacing: 30px;
+  line-height: 119%;
 }
 
 .aligned-text_center {
   display: block;
   text-align: center;
   letter-spacing: 30px;
+  line-height: 132%;
 }
 
 .aligned-text_right {
   display: block;
   text-align: right;
   letter-spacing: 30px;
-  line-height: 115%;
+  line-height: 112%;
 }
 
 .letter-spacing-extended {
@@ -110,7 +119,7 @@
 }
 
 .cover__description {
-  margin-top: 135px;
+  margin-top: 127px;
   display: flex;
   justify-content: flex-end;
   gap: 78px;
@@ -142,8 +151,8 @@
 }
 
 .lots {
+  /* max-height: 939px; */
   padding: 180px 50px 182px 50px;
-  max-height: 939px;
   font-style: normal;
 }
 
@@ -169,7 +178,7 @@
 .lots__card-list-item {
   display: block;
   width: 430px;
-  min-height: 460px;
+  min-height: 451px;
   flex-grow: 1;
 }
 
@@ -204,7 +213,7 @@
 .card__title {
   font-size: 22px;
   font-weight: 700;
-  line-height: 127%;
+  line-height: 124%;
   text-decoration-line: underline;
   text-transform: uppercase;
   z-index: 1;
@@ -229,7 +238,8 @@
 }
 
 .about {
-  padding: 12px 50px 180px 50px;
+  /* max-height: 668px; */
+  padding: 0px 50px 180px 50px;
   display: flex;
   gap: 25px;
   color: #000;
@@ -272,7 +282,7 @@
 }
 
 .top_container {
-  min-height: 240px;
+  height: 240px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -285,13 +295,13 @@
 }
 
 .about__text {
-  min-height: 240px;
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
   font-size: 20px;
   font-weight: 400;
-}
-
-.first_paragraph {
-  margin-bottom: 25px;
+  line-height: 113%;
 }
 
 .footer {
@@ -307,11 +317,17 @@
 }
 
 .footer__address {
+  justify-content: flex-start;
   justify-self: start;
+  padding-left: 5px;
 }
 
 .footer__address a {
   border-bottom: solid 1px;
+}
+
+.footer__menu {
+  line-height: 20.3px;
 }
 
 .footer__menu-list {
@@ -334,6 +350,7 @@
   list-style: none;
   display: flex;
   gap: 48px;
+  padding-right: 5px;
 }
 
 .footer__social-icon {
