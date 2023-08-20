@@ -1,5 +1,4 @@
 .header {
-  /* max-height: 293px; */
   display: grid;
   grid-template-columns: 1fr 140px 1fr;
   grid-template-rows: 109px;
@@ -21,7 +20,6 @@
   display: flex;
   gap: 32px;
   list-style: circle;
-  line-height: normal;
 }
 
 .header__links-list-item_no-bullit {
@@ -38,8 +36,8 @@
 
 .header__logo {
   display: block;
-  width: 140px;
-  height: 109px;
+  min-width: 140px;
+  min-height: 109px;
 }
 
 .header__logo-image {
@@ -64,7 +62,6 @@
 }
 
 .cover {
-  /* max-height: 766px; */
   position: relative;
   padding: 165px 50px 50px 50px;
   background-image: url(../images/cover.jpg);
@@ -151,7 +148,6 @@
 }
 
 .lots {
-  /* max-height: 939px; */
   padding: 180px 50px 182px 50px;
   font-style: normal;
 }
@@ -233,18 +229,15 @@
   color: #000;
   font-size: 20px;
   font-weight: 400;
-  line-height: normal;
   border-bottom: solid 1px;
 }
 
 .about {
-  max-height: 668px;
   padding: 0px 50px 180px 50px;
   display: flex;
   gap: 25px;
   color: #000;
   font-style: normal;
-  line-height: normal;
 }
 
 .about__column_left {
@@ -252,7 +245,7 @@
   padding-right: 95px;
   display: flex;
   flex-direction: column;
-  width: 430px;
+  min-width: 430px;
   gap: 8px;
 }
 
@@ -261,8 +254,8 @@
   justify-content: space-evenly;
   align-items: center;
   background-color: #000;
-  width: 240px;
-  height: 240px;
+  min-width: 240px;
+  min-height: 240px;
   border-radius: 50%;
 }
 
@@ -282,7 +275,7 @@
 }
 
 .top_container {
-  height: 240px;
+  min-height: 240px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -295,7 +288,7 @@
 }
 
 .about__text {
-  height: 240px;
+  min-height: 240px;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -305,12 +298,10 @@
 }
 
 .footer {
-  height: 187px;
   padding: 0 44px 90px 46px;
   display: grid;
   grid-template-columns: 1fr 160px 1fr;
   grid-template-rows: 109px;
-  line-height: 22.3px;
   color: #000;
   font-size: 18px;
   font-style: normal;
@@ -328,7 +319,7 @@
 }
 
 .footer__menu {
-  line-height: 20.3px;
+  line-height: 115%;
 }
 
 .footer__menu-list {
