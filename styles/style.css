@@ -305,7 +305,7 @@
 }
 
 .footer {
-  height: 187px;
+  /* height: 187px; */
   padding: 0 44px 90px 46px;
   display: grid;
   grid-template-columns: 1fr 160px 1fr;
