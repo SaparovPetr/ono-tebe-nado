@@ -50,17 +50,17 @@
   flex-direction: column;
 }
 
+address a {
+  display: block;
+  width: fit-content;
+  border-bottom: solid 1px;
+}
+
 .header__address {
   justify-self: end;
   justify-content: center;
   line-height: 132%;
   max-width: 240px;
-}
-
-.header__address a {
-  display: block;
-  width: fit-content;
-  border-bottom: solid 1px;
 }
 
 .cover {
@@ -315,12 +315,6 @@
   padding-left: 5px;
   line-height: 130%;
   max-width: 242px;
-}
-
-.footer__address a {
-  display: block;
-  width: fit-content;
-  border-bottom: solid 1px;
 }
 
 .footer__menu {
